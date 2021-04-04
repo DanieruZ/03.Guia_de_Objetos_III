@@ -80,7 +80,7 @@ public class Main {
     public static int menu() {
         show.println("\n\t____________________________________________________________________");
         show.println("\n");
-        show.println("\t    GUIA 02: OBJETOS III.");
+        show.println("\t    GUIA 03: OBJETOS III.");
         show.println("\n\t____________________________________________________________________");
         show.println("\n");
         show.println("\t    MENU");
