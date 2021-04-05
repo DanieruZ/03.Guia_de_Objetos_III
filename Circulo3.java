@@ -42,7 +42,7 @@ public class Circulo3 extends Figura {
 
     @Override
     public String toString() {
-        return  "\nCirculo: "   +
+        return  "\nCirculo: "    +
                 "\nRadio:..... " + this.radio +
                 "\nColor:..... " + this.color;
     }

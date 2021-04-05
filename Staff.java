@@ -33,9 +33,7 @@ public class Staff extends Persona {
 	private double salario;
 	private String turno;
 
-	public Staff(int dni, String nombre, String apellido, String email, String direccion,
-					   double salario, String turno) {
-		
+	public Staff(int dni, String nombre, String apellido, String email, String direccion, double salario, String turno) {
 		super(dni, nombre, apellido, email, direccion);
 		this.salario = salario;
 		this.turno = turno;
@@ -43,7 +41,7 @@ public class Staff extends Persona {
 
 	@Override
 	public String toString() {
-		return  "\nStaff: "             +
+		return  "\nStaff: "            +
 				"\nSalario:......... " + this.salario + 
 				"\nTurno:........... " + this.turno + 
 				"\nDNI:............. " + this.dni + 

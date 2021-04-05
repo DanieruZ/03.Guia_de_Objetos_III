@@ -34,7 +34,7 @@ public abstract class Figura {
 
     @Override
     public String toString() {
-        return "\nFigura: " +
+        return  "\nFigura: "     +
                 "\nColor:..... " + this.color;
     }
 }

@@ -34,16 +34,16 @@ public class Estudiante extends Persona {
 	private double cuota;
 	private String carrera;
 
-	public Estudiante(int dni, String nombre, String apellido, String email, String direccion, 
-					  int alta, double cuota, String carrera) {
-		
+	public Estudiante(int dni, String nombre, String apellido, String email, String direccion, int alta, double cuota, String carrera) {
 		super(dni, nombre, apellido, email, direccion);
 		this.alta = alta;
 		this.cuota = cuota;
 		this.carrera = carrera;
 	}
 
-	public double getCuota() { return cuota; }
+	public double getCuota() { 
+		return cuota;
+	}
 
 	@Override
 	public String toString() {

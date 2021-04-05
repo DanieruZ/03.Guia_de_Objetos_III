@@ -62,7 +62,7 @@ public class Circulo {
 
     @Override
     public String toString() {
-        return  "\nCirculo: "   +
+        return  "\nCirculo: "    +
                 "\nRadio:..... " + this.radio +
                 "\nColor:..... " + this.color;
     }
