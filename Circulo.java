@@ -35,7 +35,7 @@ package guia_03;
 public class Circulo {
 
     private double radio = 1.0;
-    private String color = "rojo";
+    private String color = "Rojo";
 
     public Circulo() { }
 

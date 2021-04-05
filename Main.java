@@ -48,6 +48,48 @@ public class Main {
                     show.println("\n");
 
 
+                    Estudiante estudiante = new Estudiante(30157863, "Anonimo", "Argento", "anonimo@gmail.com", "Cucha cucha al 1300", 2021, 4000, "TUP");
+                    Estudiante estudiante1 = new Estudiante(28173266, "Anonimo1", "Argento", "anonimo1@gmail.com", "Cucha cucha al 1301", 2020, 3800, "TUP");
+                    Estudiante estudiante2 = new Estudiante(32153321, "Anonimo2", "Argento", "anonimo2@gmail.com", "Cucha cucha al 1302", 2018, 1700, "TUP");
+                    Estudiante estudiante3 = new Estudiante(33356941, "Anonimo3", "Argento", "anonimo3@gmail.com", "Cucha cucha al 1303", 2019, 3200, "TUP");
+
+                    Staff miembro = new Staff(14456123, "Anonimo", "Trucheli", "anonimo@hotmail.com", "Acaalavuelta al 5000", 50000, "Mañana");
+                    Staff miembro1 = new Staff(16456663, "Anonimo", "Trucheli", "anonimo1@hotmail.com", "Acaalavuelta al 5001", 25000, "Noche");
+                    Staff miembro2 = new Staff(31487123, "Anonimo", "Trucheli", "anonimo2@hotmail.com", "Acaalavuelta al 5002", 35000, "Mañana");
+                    Staff miembro3 = new Staff(18673997, "Anonimo", "Trucheli", "anonimo3@hotmail.com", "Acaalavuelta al 5003", 45000, "Noche");
+
+                    Persona[] colegio = new Persona[8];
+                    colegio[0] = estudiante;
+                    colegio[1] = estudiante1;
+                    colegio[2] = estudiante2;
+                    colegio[3] = estudiante3;
+                    colegio[4] = miembro;
+                    colegio[5] = miembro1;
+                    colegio[6] = miembro2;
+                    colegio[7] = miembro3;
+
+                    int totalEstudiantes = 0;
+                    int totalMiembros = 0;
+
+                    for(Persona i : colegio) {
+                        if(i != null) {
+                            if(i instanceof Estudiante) totalEstudiantes++;
+                            if(i instanceof Staff) totalMiembros++;
+                        }
+                    }
+
+                    show.println("Total alumnos del colegio:..... " + totalEstudiantes);
+                    show.println("Total miembros del staff:...... " + totalMiembros);
+
+                    double totalIngresos = 0;
+
+                    for(Persona i : colegio) {
+                        if(i != null) {
+                            if(i instanceof Estudiante) totalIngresos += ((Estudiante) i).getCuota();
+                        }
+                    }
+
+                    show.println("Total ingreso mensual:......... $" + totalIngresos);
 
                     Pausa.pausar();
                     limpiarPantalla();
@@ -58,6 +100,25 @@ public class Main {
                     show.println("  -------------------");
                     show.println("\n");
 
+                    Figura circulo = new Circulo3("Violeta", 4);
+                    Figura rectangulo = new Rectangulo("Negro", 6, 12);
+                    Figura cuadrado = new Cuadrado("Blanco",5);
+
+                    show.println(circulo);
+                    show.println(rectangulo);
+                    show.println(cuadrado);
+
+                    Figura[] figuras = new Figura[3];
+                    figuras[0] = circulo;
+                    figuras[1] = rectangulo;
+                    figuras[2] = cuadrado;
+
+                    for(Figura i : figuras) {
+                        if(i != null) {
+                            show.println("\nArea:........ " + i.calcularArea());
+                            show.println("Perimetro:... " + i.calcularPerimetro());
+                        }
+                    }
 
                     Pausa.pausar();
                     limpiarPantalla();
